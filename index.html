@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kenning — Downloads</title>
+<meta name="description" content="Download Kenning, a rune-weaving RPG, for Windows and Linux.">
+<style>
+:root{color-scheme:dark;--gold:#edcc83;--muted:#a8a7bd;--line:#363247}*{box-sizing:border-box}body{margin:0;background:#13121d;color:#f0edf7;font:17px/1.65 system-ui,sans-serif}main{max-width:950px;margin:auto;padding:72px 28px}header{border-bottom:1px solid var(--line);padding-bottom:44px}.eyebrow{text-transform:uppercase;letter-spacing:.2em;color:var(--gold);font-size:12px}h1{font:600 clamp(54px,10vw,100px)/1.1 Georgia,serif;letter-spacing:-.04em;margin:18px 0}h2{font-size:23px;margin:0 0 14px}p{color:var(--muted);max-width:650px}.cards{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin:38px 0}.card{background:#1d1b2b;border:1px solid var(--line);border-radius:12px;padding:28px}.card p{font-size:15px;min-height:50px}.button{display:inline-block;color:#17141c;background:var(--gold);padding:12px 20px;border-radius:6px;font-weight:650;text-decoration:none}.button:hover{background:#ffe1a2}a{color:var(--gold)}a:focus-visible{outline:3px solid #fff;outline-offset:5px}section{margin:40px 0}code{background:#282437;padding:3px 7px;border-radius:4px;font-size:14px}footer{border-top:1px solid var(--line);padding-top:22px;font-size:14px;color:var(--muted)}.status{font-size:14px}ul{padding-left:22px;color:var(--muted)}@media(max-width:620px){main{padding:40px 20px}.cards{grid-template-columns:1fr}.card p{min-height:0}}
+</style>
+</head>
+<body><main>
+<header><div class="eyebrow">A rune-weaving RPG · playable demo</div><h1>Kenning</h1><p>A slate. A stylus. A spell, one rune at a time. Explore the Warden’s hall, compose your runes, and challenge the Rune Warden.</p><div class="status" id="status">Download the latest tested build below.</div></header>
+<div class="cards">
+<article class="card"><h2>Windows</h2><p>Windows x64. A self-contained executable; no .NET installation required.</p><a class="button" href="https://github.com/Nihilentropy-117/kenning/releases/latest/download/Kenning-windows-x64.exe">Download for Windows</a></article>
+<article class="card"><h2>Linux</h2><p>Linux x64. Extract the archive and run <code>./Kenning-linux-x64</code>.</p><a class="button" href="https://github.com/Nihilentropy-117/kenning/releases/latest/download/Kenning-linux-x64.tar.gz">Download for Linux</a></article>
+</div>
+<section><h2>Your first spell starts here.</h2><p>Choose New to begin with 10 HP, 2 mana, and three runes: d2, Damage, and Fire. The Kenning lives in your Portable Hole. A suspicious certificate on a pedestal grants full demo power for testing.</p><ul><li>Arrow keys or controller stick: walk.</li><li>Z / Enter / A: talk, inspect, confirm.</li><li>Tab / Start: equip runes. I / Back: open the bag.</li><li>Space: timing beats. 1–8: rune hotkeys.</li></ul></section>
+<section><h2>Keep your journey.</h2><p>The game writes <code>player.toml</code> beside the executable. Keep that file when replacing the game with a new build. Put the game in a folder you can write to.</p><p>This is an unsigned development demo. Windows may display an unknown-publisher warning. Linux needs a working graphical desktop and the usual OpenGL/audio libraries.</p></section>
+<footer><a href="https://github.com/Nihilentropy-117/kenning/releases">All builds and release notes</a> · <a href="https://github.com/Nihilentropy-117/kenning/releases/latest/download/SHA256SUMS.txt">SHA-256 checksums</a><p>Kenning Release · Windows and Linux builds are published only after both platforms pass their tests.</p></footer>
+</main><script>
+fetch('./build.json').then(r=>{if(!r.ok)throw Error();return r.json()}).then(b=>{document.getElementById('status').textContent=`Latest build: ${b.version} · ${new Date(b.published_at).toLocaleDateString()}`}).catch(()=>{});
+</script></body></html>
