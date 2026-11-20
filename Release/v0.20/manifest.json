@@ -1,0 +1,48 @@
+{
+  "format": 1,
+  "build": 1,
+  "tag": "v0.20",
+  "published_at": "2026-11-20T00:28:34.809902+00:00",
+  "launcher": {
+    "linux-x64": {
+      "file": "Molderia-Launcher",
+      "url": "https://github.com/Nihilentropy-117/kenning/releases/download/v0.20/Molderia-Launcher-linux-x64",
+      "sha256": "5476e464fe0366d5d3d194fbe887c2d705809c36cac64c7f2c6b9100dd4b16b0",
+      "size": 13034808
+    },
+    "win-x64": {
+      "file": "Molderia-Launcher.exe",
+      "url": "https://github.com/Nihilentropy-117/kenning/releases/download/v0.20/Molderia-Launcher-windows-x64.exe",
+      "sha256": "6067dfd7a0afb8b2ba5eccf173299930e3a15781c3c283baea6135ba399e4a40",
+      "size": 18774430
+    }
+  },
+  "engine": {
+    "linux-x64": {
+      "file": "engine-linux-x64.tar.gz",
+      "url": "https://github.com/Nihilentropy-117/kenning/releases/download/v0.20/engine-linux-x64.tar.gz",
+      "sha256": "7baec5d25b626703d09c3ef52e500d7acf9aaf17022d58cbbe068306d2d1501d",
+      "size": 39485449
+    },
+    "win-x64": {
+      "file": "engine-win-x64.tar.gz",
+      "url": "https://github.com/Nihilentropy-117/kenning/releases/download/v0.20/engine-win-x64.tar.gz",
+      "sha256": "26310789d4fee5b49d8aa33769521ee909ed34c141aab87b60527f79a5d5a5ce",
+      "size": 39370818
+    }
+  },
+  "system_mods": [
+    {
+      "file": "campaign.modpack.tar",
+      "url": "https://github.com/Nihilentropy-117/kenning/releases/download/v0.20/campaign.modpack.tar",
+      "sha256": "fc1ab03456f26553b86ba254694d65f90ffd17c2cdcf27fb321dfd2401217850",
+      "size": 21112320
+    },
+    {
+      "file": "warden.kenpack",
+      "url": "https://github.com/Nihilentropy-117/kenning/releases/download/v0.20/warden.kenpack",
+      "sha256": "e8e28a346ed4518a89c51a581359ed7aa7aab2eba3042c1e66f22fa1d5666fd9",
+      "size": 89070
+    }
+  ]
+}
